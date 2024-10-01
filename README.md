@@ -1,110 +1,57 @@
-# 🚀 My Next.js Project
+# 🚀 NestJS Project
 
-![Next.js](https://img.shields.io/badge/Next.js-13.0-blue.svg)
-![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Build](https://img.shields.io/badge/Build-Passing-brightgreen.svg)
+![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
+![Node.js](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![MongoDB](https://img.shields.io/badge/mongoDB-%2347A248.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Jest](https://img.shields.io/badge/jest-%23C21325.svg?style=for-the-badge&logo=jest&logoColor=white)
+![Mongoose](https://img.shields.io/badge/mongoose-%23E54D26.svg?style=for-the-badge&logo=mongoose&logoColor=white)
 
-## 📖 Introduction
+## 📖 Description
 
-**My Next.js Project** is a cutting-edge web application built using [Next.js](https://nextjs.org/), a React framework for production-grade applications. This project is designed for easy deployment with Docker and Docker Compose.
+This Backend project is built with [NestJS](https://nestjs.com/) and is a modular and scalable architecture that provides a secure and scalable way of creating applications. It is configured to work with MongoDB as a database and Docker as an efficient development environment.
 
-## 💡 Benefits of Using Next.js
+## 🔧 Technologies
 
-Next.js provides several benefits, including:
+- **Framework**: [NestJS](https://nestjs.com/)
+- **Database**: [MongoDB](https://www.mongodb.com/)
+- **Containers**: [Docker](https://www.docker.com/)
+- **Testing**: [Jest](https://jestjs.io/)
+- **ORM**: [Mongoose](https://mongoosejs.com/)
+- **Version Control**: [Git](https://git-scm.com/)
+- **Code Editor**: [Visual Studio Code](https://code.visualstudio.com/)
 
-* **Improved SEO**: Next.js includes built-in support for SEO best practices, such as canonical URLs and meta tags.
-* **Faster Page Loads**: Next.js uses static site generation (SSG) to pre-render pages, resulting in faster page loads.
-* **Easier Development**: Next.js provides a simple and intuitive API for building React applications.
+## 💻 Installation
 
-## 📸 Features
-
-- 🌐 **Server-Side Rendering (SSR)** for improved SEO and faster loading times.
-- 🚀 **Static Generation** with automatic page optimization.
-- 🛠 **API Routes** to create your custom backend with ease.
-- 🎨 **Styled Components** for a seamless design experience.
-- 🔍 **SEO-Optimized** with custom meta tags and OpenGraph support.
-- 🔄 **Incremental Static Regeneration (ISR)** for real-time updates.
-- 🐳 **Docker Support** for easy containerized deployment.
-
-## 👀 Screenshots
-
-Here's a screenshot of the project in action:
-
-![screenshot](screenshot.jpg)
-
-## 📦 Installation
-
-Follow these steps to set up the project locally:
-
-### Local Installation
-
-1. **Clone the repository:**
-
-    ```bash
-    git clone https://github.com/your-username/my-nextjs-project.git
-    ```
-
-2. **Navigate to the project folder:**
-
-    ```bash
-    cd my-nextjs-project
-    ```
-
-3. **Install dependencies:**
-
-    ```bash
-    npm install
-    ```
-
-4. **Run the development server:**
-
-    ```bash
-    npm run dev
-    ```
-
-5. **Open the application:**
-
-    Open your browser and visit [http://localhost:3000](http://localhost:3000) to see the app in action!
-
-### Docker Installation
-
-To run the application using Docker, ensure you have Docker and Docker Compose installed on your system.
-
-1. **Build the Docker image:**
-
-    ```bash
-    docker-compose build
-    ```
-
-2. **Start the container:**
-
-    ```bash
-    docker-compose up
-    ```
-
-3. **Visit the application:**
-
-    Visit [http://localhost:3000](http://localhost:3000) to access the application.
-
-## 💻 Maintenance
-
-### Updating Dependencies
-
-To update dependencies, run the following command:
-
+To install the project, go to the project directory and execute:
 ```bash
-npm update
+npm install
+```
+Then, to run the application, execute:
+```bash
+npm start
+```
+This project uses the layer pattern to organize the application's layers:
+
+- **Domain**: this layer contains entities and services that manage the business logic.
+- **Infrastructure**: this layer contains services that interact with the database and containers.
+- **Application**: this layer contains services that integrate the business logic and infrastructure.
+
+🐳 Docker
+This project is ready to run in a Dockerized environment. Use the following command to launch the container:
+```bash
+docker-compose up -d
 ```
 
-### Fixing Bugs
+## 📊 Roadmap
 
-To fix bugs, review the project's issue tracker and submit a pull request with the fix.
+* Add endpoints for creating and updating users
+* Implement authentication and authorization
+* Add logs and metrics for monitoring performance
+* Implement tests for security and performance
 
-### Scaling the Project
+## 🤝 Contributing
 
-To scale the project, consider using a cloud provider or load balancer to handle increased traffic.
+This project is licensed under [MIT](https://opensource.org/licenses/MIT). If you wish to contribute, please refer to the [contributing guide](CONTRIBUTING.md).
 
-## 👥 Community Involvement
-
-We encourage community involvement! Join our discussion group to share ideas, provide feedback, and learn from other developers.
+I hope this is what you were looking for!

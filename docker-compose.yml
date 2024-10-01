@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    container_name: nextjs_app
+    environment:
+      - NODE_ENV=production
+      - API_URL=https://api.example.com  # Define tu API o servicio
+      - NEXT_PUBLIC_API_URL=https://api.example.com  # Variables públicas para Next.js
+    ports:
+      - "3999:3999"  # Mapea el puerto 3000 del contenedor al puerto 3000 en el host
+    volumes:
+      - .:/app  # Mapea tu código en desarrollo, útil para ver los cambios
+    restart: always
